@@ -15,6 +15,9 @@ const Navigation = () => {
                 <li>
                     <Link to="/students/search">All Student Details</Link>
                 </li>
+                <li>
+                    <Link to="/students/bulkupload">Bulk Upload Students</Link>
+                </li>
             </ul>
         </nav>
     );
