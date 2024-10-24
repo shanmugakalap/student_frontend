@@ -13,7 +13,7 @@ const App = () => {
             <div className="App">
                 <Navigation /> {/* Add the navigation menu */}
                 <Routes>
-                    <Route path ="" element={<HomePage/>} />
+                    <Route path ="/" element={<HomePage/>} />
                     <Route path="/students/search" element={<StudentSearchForm />} />
                     <Route path="/students/bulkupload" element={<Exceldataupload />} />
                     <Route path="/students/create" element={<StudentForm />} />

@@ -55,47 +55,49 @@ const StudentUpdateForm = () => {
         <div className="form-container"> {/* Use the background image class */}
             <form onSubmit={handleUpdate}>
                 <h2>Update Student</h2>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    value={student.name}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="text"
-                    name="dept"
-                    placeholder="Department"
-                    value={student.dept}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="text"
-                    name="address"
-                    placeholder="Address"
-                    value={student.address}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="text"
-                    name="phonenumber"
-                    placeholder="Phone Number"
-                    value={student.phonenumber}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="date"
-                    name="DOB"
-                    placeholder="Date of Birth"
-                    value={student.DOB}
-                    onChange={handleChange}
-                    required
-                />
-                <button type="submit">Update Student</button>
+                <div className="student-input">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        value={student.name}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="dept"
+                        placeholder="Department"
+                        value={student.dept}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Address"
+                        value={student.address}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="phonenumber"
+                        placeholder="Phone Number"
+                        value={student.phonenumber}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="date"
+                        name="DOB"
+                        placeholder="Date of Birth"
+                        value={student.DOB}
+                        onChange={handleChange}
+                        required
+                    />
+                    <button type="submit">Update Student</button>
+                </div>
             </form>
         </div>
     );
