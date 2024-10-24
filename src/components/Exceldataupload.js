@@ -41,17 +41,20 @@ const Exceldataupload = () => {
   };
 
   return (
-    <form onSubmit={handleUpload}>
-      <input
-        type="text"
-        placeholder="Enter Google Drive File ID"
-        value={driveLink}
-        onChange={handleChange}
-        required
-      />
-      <button type="submit">Upload from Google Drive</button>
-      <p>{uploadMessage}</p>
-    </form>
+    <div className="form-container">
+        <h2>Search Students</h2>
+        <form onSubmit={handleUpload}>
+            <input
+                type="text"
+                placeholder="Enter Google Drive File ID"
+                value={driveLink}
+                onChange={handleChange}
+                required
+            />
+            <button type="submit">Upload from Google Drive</button>
+            <p>{uploadMessage}</p>
+        </form>
+    </div>
   );
 };
 
