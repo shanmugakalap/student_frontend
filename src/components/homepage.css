@@ -1,0 +1,14 @@
+.homepage {
+    text-align: center;
+    margin-top: 50px;
+    color:yellow; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    background-image: url('../assets/backimage.jpg');
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 80vh; /* Ensures the section takes at least full viewport height */
+    display: flex; /* Enables flexbox for centering content */
+    flex-direction: column; /* Aligns children vertically */
+    justify-content: center; /* Centers content vertically */
+}

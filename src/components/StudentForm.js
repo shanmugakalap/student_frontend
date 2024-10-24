@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './StudentForm.css'; // Import the CSS file
-
 const StudentForm = () => {
-    const [students, setStudents] = useState([{ 'name': '', 'dept': '', 'address': '', 'phonenumber': '' }]);
+    const [students, setStudents] = useState([{ 'name': '', 'dept': '', 'address': '', 'phonenumber': '','DOB':'' }]);
 
     const handleChange = (index, event) => {
         const values = [...students];
@@ -11,7 +10,7 @@ const StudentForm = () => {
     };
 
     const handleAddStudent = () => {
-        setStudents([...students, { 'name': '', 'dept': '', 'address': '', 'phonenumber': '' }]);
+        setStudents([...students, { 'name': '', 'dept': '', 'address': '', 'phonenumber': '','DOB':'' }]);
     };
 
     const handleSubmit = async (event) => {
@@ -34,7 +33,7 @@ const StudentForm = () => {
 
             if (response.ok) {
                 alert('Students added successfully!');
-                setStudents([{ 'name': '', 'dept': '', 'address': '', 'phonenumber': '' }]); // Reset form
+                setStudents([{ 'name': '', 'dept': '', 'address': '', 'phonenumber': '','DOB':'' }]); // Reset form
             } else {
                 const errorData = await response.json();
                 console.error('Error data received from backend:', errorData);
@@ -54,7 +53,7 @@ const StudentForm = () => {
 
     return (
         <div className="form-container">
-            <h2>Add Students</h2>
+            <h2>Students Register Form</h2>
             <form onSubmit={handleSubmit}>
                 {students.map((student, index) => (
                     <div className="student-input" key={index}>
@@ -90,6 +89,13 @@ const StudentForm = () => {
                             onChange={(event) => handleChange(index, event)}
                             required
                         />
+                        <input
+                            type="date"
+                            name="DOB"
+                            placeholder="Date of Birth"
+                            value={student.DOB}
+                            onChange={(event) => handleChange(index, event)}
+                            required                        />
                     </div>
                 ))}
                 <button type="button" onClick={handleAddStudent}>
