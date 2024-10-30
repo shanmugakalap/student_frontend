@@ -1,0 +1,12 @@
+
+{
+    "file_id":"1Fom48NWxbUcoPIzdINLj9WSrQvXBxbpx2ib7T-hnfl4"
+}
+
+https://docs.google.com/spreadsheets/d/1Fom48NWxbUcoPIzdINLj9WSrQvXBxbpx2ib7T-hnfl4/edit?usp=sharing
+
+create student: http://127.0.0.1:8000/api/students/
+serach,edit and delete student: http://127.0.0.1:8000/api/students/{id}/
+http://127.0.0.1:8000/api/students/13/
+File upload: http://127.0.0.1:8000/api/exceluploadview/
+
